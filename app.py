@@ -57,13 +57,13 @@ if uploaded_file:
                           hoverinfo='all',
                           )
 
-axis=dict(showbackground=False,
-          showline=False,
-          zeroline=False,
-          showgrid=False,
-          showticklabels=False,
-          title=''
-          )
+    axis = dict(showbackground=False,
+                showline=False,
+                zeroline=False,
+                showgrid=False,
+                showticklabels=False,
+                title=''
+                )
 
 layout = go.Layout(
          title="Network Analysis of GDELT data",
