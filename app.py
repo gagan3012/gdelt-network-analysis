@@ -65,15 +65,15 @@ if uploaded_file:
                 title=''
                 )
 
-layout = go.Layout(
-         title="Network Analysis of GDELT data",
-         width=1000,
-         height=1000,
-         showlegend=False,
-         scene=dict(
-             xaxis=dict(axis),
-             yaxis=dict(axis),
-             zaxis=dict(axis),
+    layout = go.Layout(
+        title="Network Analysis of GDELT data",
+        width=1000,
+        height=1000,
+        showlegend=False,
+        scene=dict(
+            xaxis=dict(axis),
+            yaxis=dict(axis),
+            zaxis=dict(axis),
         ),
      margin=dict(
         t=100
