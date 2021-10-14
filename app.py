@@ -20,7 +20,6 @@ if uploaded_file:
     N = list(G.nodes())
     E = list(G.edges())
 
-Yn=[layt[k][1] for k in (N)]# y-coordinates
 Zn=[layt[k][2] for k in (N)]# z-coordinates
 Xe=[]
 Ye=[]
