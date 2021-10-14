@@ -99,3 +99,4 @@ data=[trace1, trace2]
 fig=go.Figure(data=data, layout=layout)
 
 st.plotly_chart(fig, use_container_width=True)
+    st.plotly_chart(fig, use_container_width=True)
