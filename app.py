@@ -39,24 +39,23 @@ if uploaded_file:
                           hoverinfo='none'
                           )
 
-trace2=go.Scatter3d(x=Xn,
-               y=Yn,
-               z=Zn,
-               mode='markers',
-               name='Persons',
-               marker=dict(symbol='circle',
-                             size=6,
-                             color=df['COUNT'],
-                             colorscale='Viridis',
-                             line=dict(color='rgb(50,50,50)', width=0.5),
-                           colorbar=dict(
-                thickness=15, title="COUNT", xanchor="left", titleside="right"
-            ),
-                             ),
-               text=N,
-               hoverinfo='all',
-               )
-
+    trace2 = go.Scatter3d(x=Xn,
+                          y=Yn,
+                          z=Zn,
+                          mode='markers',
+                          name='Persons',
+                          marker=dict(symbol='circle',
+                                      size=6,
+                                      color=df['COUNT'],
+                                      colorscale='Viridis',
+                                      line=dict(color='rgb(50,50,50)', width=0.5),
+                                      colorbar=dict(
+                                          thickness=15, title="COUNT", xanchor="left", titleside="right"
+                                      ),
+                                      ),
+                          text=N,
+                          hoverinfo='all',
+                          )
 
 axis=dict(showbackground=False,
           showline=False,
