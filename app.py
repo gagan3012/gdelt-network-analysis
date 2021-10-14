@@ -11,7 +11,6 @@ uploaded_file = st.file_uploader("Choose a file")
 if uploaded_file:
     df = pd.read_csv(uploaded_file)
 
-labels = {i: i for i in dict(G.nodes).keys()}
     G = nx.from_pandas_edgelist(df, 'a_name', 'b_name', edge_attr='COUNT')
 
 layt = nx.spring_layout(G, dim=3, seed=18)
