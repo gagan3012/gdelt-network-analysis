@@ -93,7 +93,6 @@ if uploaded_file:
                     size=14
                 )
             )
-        ],    )
         ], )
 
 data=[trace1, trace2]
