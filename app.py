@@ -20,7 +20,6 @@ if uploaded_file:
     N = list(G.nodes())
     E = list(G.edges())
 
-Xn=[layt[k][0] for k in (N)]# x-coordinates of nodes
 Yn=[layt[k][1] for k in (N)]# y-coordinates
 Zn=[layt[k][2] for k in (N)]# z-coordinates
 Xe=[]
@@ -30,6 +29,7 @@ for e in E:
     Xe+=[layt[e[0]][0],layt[e[1]][0], None]# x-coordinates of edge ends
     Ye+=[layt[e[0]][1],layt[e[1]][1], None]
     Ze+=[layt[e[0]][2],layt[e[1]][2], None]
+    Xn = [layt[k][0] for k in (N)]  # x-coordinates of nodes
 
 trace1=go.Scatter3d(x=Xe,
                y=Ye,
