@@ -94,6 +94,7 @@ if uploaded_file:
                 )
             )
         ],    )
+        ], )
 
 data=[trace1, trace2]
 fig=go.Figure(data=data, layout=layout)
