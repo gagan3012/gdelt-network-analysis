@@ -8,6 +8,7 @@ page_title="Ex-stream-ly Cool App",
 page_icon="🧊",
 layout="wide")
 uploaded_file = st.file_uploader("Choose a file")
+if uploaded_file:
 
 G = nx.from_pandas_edgelist(df, 'a_name', 'b_name', edge_attr='COUNT')
 durations = [i['COUNT'] for i in dict(G.edges).values()]
