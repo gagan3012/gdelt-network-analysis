@@ -33,7 +33,6 @@ if uploaded_file:
 
 trace1=go.Scatter3d(x=Xe,
                y=Ye,
-               z=Ze,
                mode='lines',
                line=dict(color='rgb(125,125,125)', width=1),
                hoverinfo='none'
