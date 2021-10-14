@@ -11,7 +11,6 @@ durations = [i['COUNT'] for i in dict(G.edges).values()]
 labels = [i for i in dict(G.nodes).keys()]
 labels = {i: i for i in dict(G.nodes).keys()}
 
-layt = nx.spring_layout(G,dim=3, seed=18)
 N = list(G.nodes())
 E = list(G.edges())
 
