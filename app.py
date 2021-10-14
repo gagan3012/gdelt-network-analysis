@@ -1,6 +1,5 @@
 import streamlit as st
 import pandas as pd
-from plotly.offline import iplot
 import plotly.graph_objs as go
 
 uploaded_file = st.file_uploader("Choose a file")
