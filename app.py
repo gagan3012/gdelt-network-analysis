@@ -16,9 +16,9 @@ if uploaded_file:
     labels = [i for i in dict(G.nodes).keys()]
     labels = {i: i for i in dict(G.nodes).keys()}
 
-layt = nx.spring_layout(G, dim=3, seed=18)
-N = list(G.nodes())
-E = list(G.edges())
+    layt = nx.spring_layout(G, dim=3, seed=18)
+    N = list(G.nodes())
+    E = list(G.edges())
 
 Xn=[layt[k][0] for k in (N)]# x-coordinates of nodes
 Yn=[layt[k][1] for k in (N)]# y-coordinates
