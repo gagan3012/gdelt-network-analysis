@@ -75,23 +75,23 @@ if uploaded_file:
             yaxis=dict(axis),
             zaxis=dict(axis),
         ),
-     margin=dict(
-        t=100
-    ),
-    hovermode='closest',
-    annotations=[
-           dict(
-           showarrow=False,
-            text="Data source: GDELT",
-            xref='paper',
-            yref='paper',
-            x=0,
-            y=0.1,
-            xanchor='left',
-            yanchor='bottom',
-            font=dict(
-            size=14
-            )
+        margin=dict(
+            t=100
+        ),
+        hovermode='closest',
+        annotations=[
+            dict(
+                showarrow=False,
+                text="Data source: GDELT",
+                xref='paper',
+                yref='paper',
+                x=0,
+                y=0.1,
+                xanchor='left',
+                yanchor='bottom',
+                font=dict(
+                    size=14
+                )
             )
         ],    )
 
