@@ -4,6 +4,7 @@ import plotly.graph_objs as go
 import networkx as nx
 
 st.set_page_config(
+page_title="Ex-stream-ly Cool App",
 uploaded_file = st.file_uploader("Choose a file")
 df = pd.read_csv(uploaded_file)
 
