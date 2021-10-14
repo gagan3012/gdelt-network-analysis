@@ -11,7 +11,6 @@ uploaded_file = st.file_uploader("Choose a file")
 if uploaded_file:
     df = pd.read_csv(uploaded_file)
 
-durations = [i['COUNT'] for i in dict(G.edges).values()]
 labels = [i for i in dict(G.nodes).keys()]
 labels = {i: i for i in dict(G.nodes).keys()}
     G = nx.from_pandas_edgelist(df, 'a_name', 'b_name', edge_attr='COUNT')
