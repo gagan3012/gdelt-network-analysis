@@ -5,6 +5,7 @@ import networkx as nx
 
 st.set_page_config(
 page_title="Ex-stream-ly Cool App",
+layout="wide")
 uploaded_file = st.file_uploader("Choose a file")
 df = pd.read_csv(uploaded_file)
 
