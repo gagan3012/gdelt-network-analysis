@@ -31,12 +31,13 @@ if uploaded_file:
         Ye += [layt[e[0]][1], layt[e[1]][1], None]
         Ze += [layt[e[0]][2], layt[e[1]][2], None]
 
-trace1=go.Scatter3d(x=Xe,
-               y=Ye,
-               mode='lines',
-               line=dict(color='rgb(125,125,125)', width=1),
-               hoverinfo='none'
-               )
+    trace1 = go.Scatter3d(x=Xe,
+                          y=Ye,
+                          z=Ze,
+                          mode='lines',
+                          line=dict(color='rgb(125,125,125)', width=1),
+                          hoverinfo='none'
+                          )
 
 trace2=go.Scatter3d(x=Xn,
                y=Yn,
