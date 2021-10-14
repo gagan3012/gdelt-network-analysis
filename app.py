@@ -13,6 +13,7 @@ if uploaded_file:
 
     G = nx.from_pandas_edgelist(df, 'a_name', 'b_name', edge_attr='COUNT')
     durations = [i['COUNT'] for i in dict(G.edges).values()]
+    labels = [i for i in dict(G.nodes).keys()]
 
 layt = nx.spring_layout(G, dim=3, seed=18)
 N = list(G.nodes())
