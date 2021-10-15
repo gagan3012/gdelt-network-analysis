@@ -7,6 +7,8 @@ st.set_page_config(
 page_title="Ex-stream-ly Cool App",
 page_icon="🧊",
 layout="wide")
+
+st.write("To generate the CSV ")
 uploaded_file = st.file_uploader("Choose a file")
 if uploaded_file:
     df = pd.read_csv(uploaded_file)
